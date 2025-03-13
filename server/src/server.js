@@ -1,12 +1,16 @@
 const express = require("express");
+const path = require("path");
+
 const app = express();
 
-const PORT = 3000;
+console.log(__dirname);
+// Serve the React build folder
+app.use(express.static(path.join(__dirname, "../../client/dist")));
 
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/public/index.html");
+// Catch-all route to serve index.html
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../../client/dist", "index.html"));
 });
 
-app.listen(PORT, () => {
-  console.log("Listening at " + PORT);
-});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
