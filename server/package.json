@@ -1,0 +1,24 @@
+{
+  "name": "webscraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tminh2003/WebScraper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tminh2003/WebScraper/issues"
+  },
+  "homepage": "https://github.com/tminh2003/WebScraper#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
