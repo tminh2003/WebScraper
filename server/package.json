@@ -20,6 +20,9 @@
   "homepage": "https://github.com/tminh2003/WebScraper#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.21.2"
+    "csv-parser": "^3.2.0",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "sqlite3": "^5.1.7"
   }
 }
