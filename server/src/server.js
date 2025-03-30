@@ -1,6 +1,6 @@
 const Trie = require("./Trie.js");
-const csvToDb = require("./scripts/csv-to-db.js");
-const searchSuggest = require("./scripts/db-to-trie.js");
+const loadCsvToDb = require("./scripts/csv-to-db.js");
+const loadTrieFromDb = require("./scripts/db-to-trie.js"); // Renamed for clarity
 const { PORT } = require("../config.js");
 
 const express = require("express");
@@ -10,15 +10,37 @@ const cors = require("cors");
 
 app.use(cors());
 
-console.log(searchSuggest);
-
 // Serve the React build folder
 app.use(express.static(path.join(__dirname, "../../client/dist")));
 
-app.get("/suggestions", (req, res) => {
-  const query = req.query.query;
+let searchSuggest; // Will be initialized later
 
-  console.log(searchSuggest);
+//Make sure database is loaded first
+(async () => {
+  try {
+    //Convert CSV to DB (if needed)
+    await loadCsvToDb();
+
+    // Initialize searchSuggest with Trie after DB is ready
+    searchSuggest = await loadTrieFromDb();
+
+    console.log("Database and Trie are ready.");
+
+    // Start the server only after setup is complete
+    app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
+  } catch (err) {
+    console.error("Error during server setup:", err);
+    process.exit(1);
+  }
+})();
+
+// Suggestions route
+app.get("/suggestions", (req, res) => {
+  if (!searchSuggest) {
+    return res.status(500).json({ error: "Trie not initialized yet" });
+  }
+
+  const query = req.query.query;
 
   // Get suggestions from Trie
   const suggestions = searchSuggest.getSuggestions(query.toLowerCase(), 5);
@@ -29,9 +51,6 @@ app.get("/suggestions", (req, res) => {
 });
 
 // Catch-all route to serve index.html
-
 app.get("", (req, res) => {
   res.sendFile(path.join(__dirname, "../../client/dist", "index.html"));
 });
-
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

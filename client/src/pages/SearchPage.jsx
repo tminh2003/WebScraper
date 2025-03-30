@@ -6,7 +6,7 @@ const SERVER_URL = "http://localhost:3000";
 
 const SearchPage = () => {
   // For controlling user searchbar input
-  const [query, setQuery] = useState("c");
+  const [query, setQuery] = useState("");
 
   // For storing the search suggestions
   const [suggestions, setSuggestions] = useState(["a", "b"]);
@@ -43,6 +43,7 @@ const SearchPage = () => {
         <input
           type="text"
           value={query}
+          list="product-suggestions"
           onChange={(e) => setQuery(e.target.value)}
         />
         <button type="submit">Search</button>
