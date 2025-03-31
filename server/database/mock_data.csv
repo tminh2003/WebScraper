@@ -1,51 +1,11 @@
-Product_ID,Product_Name,Product_Type,Amazon_Price,eBay_Price,Amazon_URL,eBay_URL,Timestamp
-1,Google Pixel 7,Health & Fitness,929.36,918.2,https://amazon.com/product1,https://ebay.com/item1,2025-03-25 18:56:41
-2,Sennheiser HD 660S,Gaming,731.07,723.9,https://amazon.com/product2,https://ebay.com/item2,2025-03-25 18:55:41
-3,Oculus Quest 2,Smart Home,347.96,356.3,https://amazon.com/product3,https://ebay.com/item3,2025-03-25 18:54:41
-4,GoPro Hero 11,Home Appliance,834.56,807.43,https://amazon.com/product4,https://ebay.com/item4,2025-03-25 18:53:41
-5,LG OLED CX TV,Smart Home,829.56,852.89,https://amazon.com/product5,https://ebay.com/item5,2025-03-25 18:52:41
-6,Microsoft Surface Pro 9,Electronics,1232.1,1227.96,https://amazon.com/product6,https://ebay.com/item6,2025-03-25 18:51:41
-7,GoPro Hero 11,Wearables,678.15,740.37,https://amazon.com/product7,https://ebay.com/item7,2025-03-25 18:50:41
-8,Kindle Paperwhite,Home Appliance,946.44,960.62,https://amazon.com/product8,https://ebay.com/item8,2025-03-25 18:49:41
-9,Alienware Aurora R13,Gaming,130.22,134.31,https://amazon.com/product9,https://ebay.com/item9,2025-03-25 18:48:41
-10,iPhone 13,Health & Fitness,1200.89,1204.71,https://amazon.com/product10,https://ebay.com/item10,2025-03-25 18:47:41
-11,Corsair K95 Keyboard,Health & Fitness,397.37,409.89,https://amazon.com/product11,https://ebay.com/item11,2025-03-25 18:46:41
-12,Seagate Backup Plus 5TB,Health & Fitness,384.24,347.91,https://amazon.com/product12,https://ebay.com/item12,2025-03-25 18:45:41
-13,Apple Watch Series 8,Wearables,1056.29,1058.79,https://amazon.com/product13,https://ebay.com/item13,2025-03-25 18:44:41
-14,Samsung Galaxy S21,Computer Accessories,984.09,987.35,https://amazon.com/product14,https://ebay.com/item14,2025-03-25 18:43:41
-15,Xiaomi Mi Band 6,Health & Fitness,63.91,68.2,https://amazon.com/product15,https://ebay.com/item15,2025-03-25 18:42:41
-16,Nike Air Max 270,Electronics,640.83,662.99,https://amazon.com/product16,https://ebay.com/item16,2025-03-25 18:41:41
-17,Canon EOS Rebel T7,Electronics,1353.96,1485.46,https://amazon.com/product17,https://ebay.com/item17,2025-03-25 18:40:41
-18,Yeti Rambler 20 oz,Footwear,199.53,186.13,https://amazon.com/product18,https://ebay.com/item18,2025-03-25 18:39:41
-19,Dyson V11 Vacuum,Wearables,160.33,172.01,https://amazon.com/product19,https://ebay.com/item19,2025-03-25 18:38:41
-20,Seagate Backup Plus 5TB,Smart Home,1084.52,1042.38,https://amazon.com/product20,https://ebay.com/item20,2025-03-25 18:37:41
-21,Samsung QLED TV,Footwear,49.77,50.36,https://amazon.com/product21,https://ebay.com/item21,2025-03-25 18:36:41
-22,Samsung QLED TV,Smart Home,1263.0,1219.47,https://amazon.com/product22,https://ebay.com/item22,2025-03-25 18:35:41
-23,Belkin Wireless Charger,Electronics,1358.29,1442.81,https://amazon.com/product23,https://ebay.com/item23,2025-03-25 18:34:41
-24,Fitbit Charge 5,Kitchen Appliance,956.64,903.63,https://amazon.com/product24,https://ebay.com/item24,2025-03-25 18:33:41
-25,WD My Passport 4TB,Health & Fitness,1347.17,1271.99,https://amazon.com/product25,https://ebay.com/item25,2025-03-25 18:32:41
-26,Ecovacs Deebot N8,Health & Fitness,91.99,97.35,https://amazon.com/product26,https://ebay.com/item26,2025-03-25 18:31:41
-27,Keurig K-Slim Coffee Maker,Footwear,183.76,198.32,https://amazon.com/product27,https://ebay.com/item27,2025-03-25 18:30:41
-28,Microsoft Surface Pro 9,Computer Accessories,1169.92,1239.23,https://amazon.com/product28,https://ebay.com/item28,2025-03-25 18:29:41
-29,Samsung Galaxy S21,Health & Fitness,61.12,61.21,https://amazon.com/product29,https://ebay.com/item29,2025-03-25 18:28:41
-30,Anker PowerCore 20100,Smart Home,401.99,375.31,https://amazon.com/product30,https://ebay.com/item30,2025-03-25 18:27:41
-31,Kindle Paperwhite,Computer Accessories,855.85,802.18,https://amazon.com/product31,https://ebay.com/item31,2025-03-25 18:26:41
-32,Beats Studio Buds,Smart Home,821.64,764.13,https://amazon.com/product32,https://ebay.com/item32,2025-03-25 18:25:41
-33,WD My Passport 4TB,Footwear,1092.3,1113.13,https://amazon.com/product33,https://ebay.com/item33,2025-03-25 18:24:41
-34,Samsung Galaxy S21,Wearables,1076.12,974.63,https://amazon.com/product34,https://ebay.com/item34,2025-03-25 18:23:41
-35,Nike Air Max 270,Smart Home,845.73,897.04,https://amazon.com/product35,https://ebay.com/item35,2025-03-25 18:22:41
-36,Dyson V11 Vacuum,Computer Accessories,957.27,1035.68,https://amazon.com/product36,https://ebay.com/item36,2025-03-25 18:21:41
-37,Logitech MX Master 3,Wearables,432.95,438.16,https://amazon.com/product37,https://ebay.com/item37,2025-03-25 18:20:41
-38,Microsoft Surface Pro 9,Footwear,762.42,778.8,https://amazon.com/product38,https://ebay.com/item38,2025-03-25 18:19:41
-39,Arlo Pro 4 Security Camera,Footwear,1338.62,1370.68,https://amazon.com/product39,https://ebay.com/item39,2025-03-25 18:18:41
-40,Sennheiser HD 660S,Gaming,692.79,755.96,https://amazon.com/product40,https://ebay.com/item40,2025-03-25 18:17:41
-41,Nintendo Switch OLED,Electronics,436.23,462.25,https://amazon.com/product41,https://ebay.com/item41,2025-03-25 18:16:41
-42,Beats Studio Buds,Smart Home,1288.78,1328.48,https://amazon.com/product42,https://ebay.com/item42,2025-03-25 18:15:41
-43,Dyson V11 Vacuum,Health & Fitness,1013.71,923.39,https://amazon.com/product43,https://ebay.com/item43,2025-03-25 18:14:41
-44,Canon EOS Rebel T7,Gaming,342.53,367.62,https://amazon.com/product44,https://ebay.com/item44,2025-03-25 18:13:41
-45,Sony WH-1000XM5,Footwear,1365.8,1340.77,https://amazon.com/product45,https://ebay.com/item45,2025-03-25 18:12:41
-46,GoPro Hero 11,Footwear,446.78,453.26,https://amazon.com/product46,https://ebay.com/item46,2025-03-25 18:11:41
-47,Garmin Forerunner 245,Gaming,405.56,429.34,https://amazon.com/product47,https://ebay.com/item47,2025-03-25 18:10:41
-48,Arlo Pro 4 Security Camera,Gaming,623.43,668.46,https://amazon.com/product48,https://ebay.com/item48,2025-03-25 18:09:41
-49,Ecovacs Deebot N8,Health & Fitness,628.76,608.37,https://amazon.com/product49,https://ebay.com/item49,2025-03-25 18:08:41
-50,Roku Streaming Stick,Gaming,234.77,234.95,https://amazon.com/product50,https://ebay.com/item50,2025-03-25 18:07:41
+Product_ID,Product_Name,Product_Type,Product_Color,Product_Material,Amazon_Price,eBay_Price,Amazon_URL,eBay_URL,Timestamp
+1,Google Pixel 7,Health & Fitness,Black,Aluminum,929.36,918.2,https://amazon.com/product1,https://ebay.com/item1,2025-03-25 18:56:41
+2,Sennheiser HD 660S,Gaming,Black,Plastic,731.07,723.9,https://amazon.com/product2,https://ebay.com/item2,2025-03-25 18:55:41
+3,Oculus Quest 2,Smart Home,White,Plastic,347.96,356.3,https://amazon.com/product3,https://ebay.com/item3,2025-03-25 18:54:41
+4,GoPro Hero 11,Home Appliance,Black,Metal,834.56,807.43,https://amazon.com/product4,https://ebay.com/item4,2025-03-25 18:53:41
+5,LG OLED CX TV,Smart Home,Silver,Glass,829.56,852.89,https://amazon.com/product5,https://ebay.com/item5,2025-03-25 18:52:41
+6,Microsoft Surface Pro 9,Electronics,Platinum,Magnesium,1232.1,1227.96,https://amazon.com/product6,https://ebay.com/item6,2025-03-25 18:51:41
+7,GoPro Hero 11,Wearables,Blue,Plastic,678.15,740.37,https://amazon.com/product7,https://ebay.com/item7,2025-03-25 18:50:41
+8,Kindle Paperwhite,Home Appliance,White,Plastic,946.44,960.62,https://amazon.com/product8,https://ebay.com/item8,2025-03-25 18:49:41
+9,Alienware Aurora R13,Gaming,Black,Aluminum,130.22,134.31,https://amazon.com/product9,https://ebay.com/item9,2025-03-25 18:48:41
+10,iPhone 13,Health & Fitness,Blue,Glass,1200.89,1204.71,https://amazon.com/product10,https://ebay.com/item10,2025-03-25 18:47:41

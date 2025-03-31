@@ -1,6 +1,7 @@
 const Trie = require("./Trie.js");
 const loadCsvToDb = require("./scripts/csv-to-db.js");
-const loadTrieFromDb = require("./scripts/db-to-trie.js"); // Renamed for clarity
+const loadTrieFromDb = require("./scripts/db-to-trie.js");
+const loadArrayFromDb = require("./scripts/db-to-array.js");
 const { PORT } = require("../config.js");
 
 const express = require("express");
@@ -23,6 +24,10 @@ let searchSuggest; // Will be initialized later
 
     // Initialize searchSuggest with Trie after DB is ready
     searchSuggest = await loadTrieFromDb();
+
+    // Initialize productsArray after DB is ready
+    //productsArray = await loadArrayFromDb();
+    //console.log(productsArray);
 
     console.log("Database and Trie are ready.");
 

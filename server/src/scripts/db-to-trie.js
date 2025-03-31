@@ -11,10 +11,10 @@ function loadTrieFromDb() {
     // Open the database connection
     const db = new sqlite3.Database(DB_PATH, sqlite3.OPEN_READWRITE, (err) => {
       if (err) {
-        console.error("❌ Error opening database:", err.message);
+        console.error(" Error opening database:", err.message);
         return reject(err);
       }
-      console.log("✅ Connected to the database.");
+      console.log(" Connected to the database.");
     });
 
     // Query to retrieve all product names from the database
@@ -22,7 +22,7 @@ function loadTrieFromDb() {
 
     db.all(query, [], (err, rows) => {
       if (err) {
-        console.error("❌ Error retrieving data:", err.message);
+        console.error(" Error retrieving data:", err.message);
         db.close();
         return reject(err);
       }
@@ -34,15 +34,15 @@ function loadTrieFromDb() {
         }
       });
 
-      console.log("✅ All product names inserted into the Trie.");
+      console.log(" All product names inserted into the Trie.");
 
       // Close the database connection
       db.close((err) => {
         if (err) {
-          console.error("❌ Error closing database:", err.message);
+          console.error(" Error closing database:", err.message);
           return reject(err);
         }
-        console.log("✅ Database connection closed.");
+        console.log(" Database connection closed.");
         resolve(trie); // Resolve with the populated Trie
       });
     });

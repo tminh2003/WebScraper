@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import SearchSuggestList from "../components/SearchSuggestList";
+import { useNavigate } from "react-router-dom";
 
 const SERVER_URL = "http://localhost:3000";
 
@@ -10,6 +11,17 @@ const SearchPage = () => {
 
   // For storing the search suggestions
   const [suggestions, setSuggestions] = useState(["a", "b"]);
+  // Hook to programmatically navigate
+  const navigate = useNavigate();
+
+  //When user press submit button
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (query) {
+      // Redirect to result page with query parameter
+      navigate(`/result?q=${query}`);
+    }
+  };
 
   // Get suggestions from the server
   useEffect(() => {
@@ -38,7 +50,7 @@ const SearchPage = () => {
 
   return (
     <div>
-      <form onSubmit={(e) => e.preventDefault()}>
+      <form onSubmit={handleSearch}>
         <h1>Search for an item</h1>
         <input
           type="text"

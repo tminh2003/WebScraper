@@ -22,6 +22,8 @@ function loadCsvToDb() {
               Product_ID INTEGER PRIMARY KEY,
               Product_Name TEXT,
               Product_Type TEXT,
+              Product_Color TEXT,
+              Product_Material TEXT,
               Amazon_Price REAL,
               eBay_Price REAL,
               Amazon_URL TEXT,
@@ -44,14 +46,16 @@ function loadCsvToDb() {
       .on("data", (row) => {
         // Prepare the INSERT query
         const query = `
-          INSERT OR REPLACE INTO products (Product_ID, Product_Name, Product_Type, Amazon_Price, eBay_Price, Amazon_URL, eBay_URL, Timestamp)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+          INSERT OR REPLACE INTO products (Product_ID, Product_Name, Product_Type, Product_Color, Product_Material, Amazon_Price, eBay_Price, Amazon_URL, eBay_URL, Timestamp)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         `;
 
         const values = [
           parseInt(row.Product_ID),
           row.Product_Name,
           row.Product_Type,
+          row.Product_Color,
+          row.Product_Material,
           parseFloat(row.Amazon_Price),
           parseFloat(row.eBay_Price),
           row.Amazon_URL,
@@ -69,7 +73,7 @@ function loadCsvToDb() {
         });
       })
       .on("end", () => {
-        console.log("✅ CSV file successfully processed and data inserted.");
+        console.log("CSV file successfully processed and data inserted.");
         db.close((err) => {
           if (err) {
             console.error("Error closing database:", err.message);
