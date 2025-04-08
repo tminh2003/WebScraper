@@ -1,8 +1,14 @@
+import { useNavigate } from "react-router-dom";
+
 const ResultItem = ({ result }) => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate(`/compare?productId=${result.name}`);
+  };
   return (
-    <div className="result-item">
+    <a className="result-item" onClick={handleClick}>
       <h3>{result.name}</h3>
-    </div>
+    </a>
   );
 };
 

@@ -1,11 +1,51 @@
 Product_ID,Product_Name,Product_Type,Product_Color,Product_Material,Amazon_Price,eBay_Price,Amazon_URL,eBay_URL,Timestamp
-1,Google Pixel 7,Health & Fitness,Black,Aluminum,929.36,918.2,https://amazon.com/product1,https://ebay.com/item1,2025-03-25 18:56:41
-2,Sennheiser HD 660S,Gaming,Black,Plastic,731.07,723.9,https://amazon.com/product2,https://ebay.com/item2,2025-03-25 18:55:41
-3,Oculus Quest 2,Smart Home,White,Plastic,347.96,356.3,https://amazon.com/product3,https://ebay.com/item3,2025-03-25 18:54:41
-4,GoPro Hero 11,Home Appliance,Black,Metal,834.56,807.43,https://amazon.com/product4,https://ebay.com/item4,2025-03-25 18:53:41
-5,LG OLED CX TV,Smart Home,Silver,Glass,829.56,852.89,https://amazon.com/product5,https://ebay.com/item5,2025-03-25 18:52:41
-6,Microsoft Surface Pro 9,Electronics,Platinum,Magnesium,1232.1,1227.96,https://amazon.com/product6,https://ebay.com/item6,2025-03-25 18:51:41
-7,GoPro Hero 11,Wearables,Blue,Plastic,678.15,740.37,https://amazon.com/product7,https://ebay.com/item7,2025-03-25 18:50:41
-8,Kindle Paperwhite,Home Appliance,White,Plastic,946.44,960.62,https://amazon.com/product8,https://ebay.com/item8,2025-03-25 18:49:41
-9,Alienware Aurora R13,Gaming,Black,Aluminum,130.22,134.31,https://amazon.com/product9,https://ebay.com/item9,2025-03-25 18:48:41
-10,iPhone 13,Health & Fitness,Blue,Glass,1200.89,1204.71,https://amazon.com/product10,https://ebay.com/item10,2025-03-25 18:47:41
+1,Apple iPhone 15 Pro,Electronics,Silver,Titanium,1099.00,1075.50,https://amazon.com/product1,https://ebay.com/item1,2025-03-31 12:01:00
+2,Samsung Galaxy S24 Ultra,Electronics,Black,Aluminum,1199.99,1179.89,https://amazon.com/product2,https://ebay.com/item2,2025-03-31 12:01:01
+3,Dyson V15 Detect,Home Appliance,Purple,Plastic,699.00,680.20,https://amazon.com/product3,https://ebay.com/item3,2025-03-31 12:01:02
+4,Sony WH-1000XM5,Gaming,Black,Plastic,399.99,389.99,https://amazon.com/product4,https://ebay.com/item4,2025-03-31 12:01:03
+5,Google Nest Thermostat,Smart Home,White,Glass,129.99,124.99,https://amazon.com/product5,https://ebay.com/item5,2025-03-31 12:01:04
+6,Fitbit Charge 6,Health & Fitness,Blue,Silicone,159.95,152.90,https://amazon.com/product6,https://ebay.com/item6,2025-03-31 12:01:05
+7,Garmin Forerunner 265,Wearables,Black,Plastic,449.99,435.75,https://amazon.com/product7,https://ebay.com/item7,2025-03-31 12:01:06
+8,Nintendo Switch OLED,Gaming,White,Plastic,349.99,339.95,https://amazon.com/product8,https://ebay.com/item8,2025-03-31 12:01:07
+9,LG C3 OLED TV 55 inch,Smart Home,Black,Glass,1399.99,1349.49,https://amazon.com/product9,https://ebay.com/item9,2025-03-31 12:01:08
+10,Dell XPS 13 Laptop,Electronics,Silver,Aluminum,999.00,975.30,https://amazon.com/product10,https://ebay.com/item10,2025-03-31 12:01:09
+11,MacBook Air M3,Electronics,Space Gray,Aluminum,1299.00,1275.00,https://amazon.com/product11,https://ebay.com/item11,2025-03-31 12:01:10
+12,Ring Video Doorbell Pro 2,Smart Home,Bronze,Metal,249.99,239.99,https://amazon.com/product12,https://ebay.com/item12,2025-03-31 12:01:11
+13,Bose QuietComfort Ultra,Gaming,White,Plastic,429.00,419.99,https://amazon.com/product13,https://ebay.com/item13,2025-03-31 12:01:12
+14,Logitech MX Master 3S,Electronics,Gray,Plastic,99.99,92.80,https://amazon.com/product14,https://ebay.com/item14,2025-03-31 12:01:13
+15,Anker 737 Power Bank,Electronics,Black,Plastic,159.99,149.99,https://amazon.com/product15,https://ebay.com/item15,2025-03-31 12:01:14
+16,Sony A7 IV Camera,Electronics,Black,Magnesium,2499.99,2399.00,https://amazon.com/product16,https://ebay.com/item16,2025-03-31 12:01:15
+17,GoPro Hero 12 Black,Electronics,Black,Plastic,399.99,384.25,https://amazon.com/product17,https://ebay.com/item17,2025-03-31 12:01:16
+18,Kobo Libra 2 E-Reader,Home Appliance,White,Plastic,179.99,169.99,https://amazon.com/product18,https://ebay.com/item18,2025-03-31 12:01:17
+19,Razer Blade 16 Laptop,Gaming,Black,Aluminum,2699.99,2599.99,https://amazon.com/product19,https://ebay.com/item19,2025-03-31 12:01:18
+20,Acer Predator X27 Monitor,Gaming,Black,Plastic,1999.00,1950.00,https://amazon.com/product20,https://ebay.com/item20,2025-03-31 12:01:19
+21,Apple Watch Series 9,Wearables,Red,Aluminum,399.00,389.50,https://amazon.com/product21,https://ebay.com/item21,2025-03-31 12:01:20
+22,Canon EOS R7 Camera,Electronics,Black,Magnesium,1499.00,1450.00,https://amazon.com/product22,https://ebay.com/item22,2025-03-31 12:01:21
+23,Kindle Scribe 64GB,Home Appliance,Gray,Plastic,369.99,359.99,https://amazon.com/product23,https://ebay.com/item23,2025-03-31 12:01:22
+24,Beats Studio Pro,Gaming,Black,Plastic,349.99,339.95,https://amazon.com/product24,https://ebay.com/item24,2025-03-31 12:01:23
+25,MSI GeForce RTX 4080 GPU,Electronics,Black,Metal,1299.99,1250.00,https://amazon.com/product25,https://ebay.com/item25,2025-03-31 12:01:24
+26,Echo Show 10 (3rd Gen),Smart Home,Charcoal,Plastic,249.99,239.95,https://amazon.com/product26,https://ebay.com/item26,2025-03-31 12:01:25
+27,OnePlus Open Foldable,Electronics,Green,Glass,1699.99,1625.49,https://amazon.com/product27,https://ebay.com/item27,2025-03-31 12:01:26
+28,Dyson Airwrap Styler,Home Appliance,Pink,Metal,599.00,579.00,https://amazon.com/product28,https://ebay.com/item28,2025-03-31 12:01:27
+29,NVIDIA Shield TV Pro,Smart Home,Black,Plastic,199.99,190.00,https://amazon.com/product29,https://ebay.com/item29,2025-03-31 12:01:28
+30,Asus ROG Phone 8 Pro,Gaming,Black,Glass,1099.99,1050.00,https://amazon.com/product30,https://ebay.com/item30,2025-03-31 12:01:29
+31,Apple Vision Pro,Electronics,White,Aluminum,3499.00,3450.00,https://amazon.com/product31,https://ebay.com/item31,2025-03-31 12:01:30
+32,HyperX Cloud III,Gaming,Black,Plastic,99.99,89.99,https://amazon.com/product32,https://ebay.com/item32,2025-03-31 12:01:31
+33,Meta Quest 3,Wearables,White,Plastic,499.00,480.00,https://amazon.com/product33,https://ebay.com/item33,2025-03-31 12:01:32
+34,Steam Deck OLED,Gaming,Gray,Plastic,549.00,529.00,https://amazon.com/product34,https://ebay.com/item34,2025-03-31 12:01:33
+35,Ecovacs Deebot X2 Omni,Home Appliance,White,Plastic,1399.00,1345.00,https://amazon.com/product35,https://ebay.com/item35,2025-03-31 12:01:34
+36,Tile Pro Tracker 2-Pack,Home Appliance,Black,Plastic,59.99,55.99,https://amazon.com/product36,https://ebay.com/item36,2025-03-31 12:01:35
+37,LG UltraGear 27 inch Monitor,Gaming,Black,Plastic,329.99,315.00,https://amazon.com/product37,https://ebay.com/item37,2025-03-31 12:01:36
+38,Sonos Move 2 Speaker,Home Appliance,White,Metal,449.00,429.00,https://amazon.com/product38,https://ebay.com/item38,2025-03-31 12:01:37
+39,TP-Link Deco XE75 Mesh,Smart Home,White,Plastic,299.99,284.99,https://amazon.com/product39,https://ebay.com/item39,2025-03-31 12:01:38
+40,Samsung T9 Portable SSD 2TB,Electronics,Blue,Aluminum,249.99,239.99,https://amazon.com/product40,https://ebay.com/item40,2025-03-31 12:01:39
+41,Levoit Core 400S Air Purifier,Home Appliance,White,Plastic,219.99,210.00,https://amazon.com/product41,https://ebay.com/item41,2025-03-31 12:01:40
+42,Wyze Cam Floodlight Pro,Smart Home,White,Plastic,149.99,140.00,https://amazon.com/product42,https://ebay.com/item42,2025-03-31 12:01:41
+43,SteelSeries Arctis Nova Pro,Gaming,Black,Metal,349.99,339.00,https://amazon.com/product43,https://ebay.com/item43,2025-03-31 12:01:42
+44,Samsung Galaxy Watch 6,Wearables,Graphite,Aluminum,299.99,289.99,https://amazon.com/product44,https://ebay.com/item44,2025-03-31 12:01:43
+45,Alienware AW3423DWF Monitor,Gaming,Black,Plastic,1199.99,1149.00,https://amazon.com/product45,https://ebay.com/item45,2025-03-31 12:01:44
+46,Anker Nebula Capsule 3 Projector,Home Appliance,Red,Plastic,469.99,449.00,https://amazon.com/product46,https://ebay.com/item46,2025-03-31 12:01:45
+47,Braun Series 9 Pro+,Health & Fitness,Silver,Metal,349.99,339.99,https://amazon.com/product47,https://ebay.com/item47,2025-03-31 12:01:46
+48,Polar H10 Heart Rate Sensor,Health & Fitness,Black,Plastic,89.95,84.50,https://amazon.com/product48,https://ebay.com/item48,2025-03-31 12:01:47
+49,Oral-B iO Series 9,Health & Fitness,White,Plastic,299.99,289.99,https://amazon.com/product49,https://ebay.com/item49,2025-03-31 12:01:48
+50,Withings Body Comp Scale,Health & Fitness,Black,Glass,199.99,189.99,https://amazon.com/product50,https://ebay.com/item50,2025-03-31 12:01:49

@@ -84,6 +84,21 @@ app.get("/search", (req, res) => {
   }
 });
 
+// Product route
+app.get("/product", (req, res) => {
+  //Extract query from search
+  const query = req.query.productId;
+
+  //Get the exact product from the products array
+  let exactProduct = productsArray.find(
+    (product) => product.name.toLowerCase() == query.toLowerCase()
+  );
+
+  res.json({
+    product: exactProduct,
+  });
+});
+
 // Catch-all route to serve index.html
 app.get("", (req, res) => {
   res.sendFile(path.join(__dirname, "../../client/dist", "index.html"));
