@@ -10,7 +10,7 @@ const SearchPage = () => {
   const [query, setQuery] = useState("");
 
   // For storing the search suggestions
-  const [suggestions, setSuggestions] = useState(["a", "b"]);
+  const [suggestions, setSuggestions] = useState([]);
   // Hook to programmatically navigate
   const navigate = useNavigate();
 

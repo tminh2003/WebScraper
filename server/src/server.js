@@ -2,6 +2,7 @@ const Trie = require("./Trie.js");
 const loadCsvToDb = require("./scripts/csv-to-db.js");
 const loadTrieFromDb = require("./scripts/db-to-trie.js");
 const loadArrayFromDb = require("./scripts/db-to-array.js");
+const getSimilarity = require("./scripts/similarity.js");
 const { PORT } = require("../config.js");
 
 const express = require("express");
@@ -15,7 +16,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, "../../client/dist")));
 
 let searchSuggest; // Will be initialized later
-
+let productsArray;
 //Make sure database is loaded first
 (async () => {
   try {
@@ -26,10 +27,8 @@ let searchSuggest; // Will be initialized later
     searchSuggest = await loadTrieFromDb();
 
     // Initialize productsArray after DB is ready
-    //productsArray = await loadArrayFromDb();
-    //console.log(productsArray);
-
-    console.log("Database and Trie are ready.");
+    productsArray = await loadArrayFromDb();
+    console.log(productsArray);
 
     // Start the server only after setup is complete
     app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
@@ -53,6 +52,36 @@ app.get("/suggestions", (req, res) => {
   res.json({
     suggestions,
   });
+});
+
+app.get("/search", (req, res) => {
+  //Extract query from search
+  const query = req.query.query;
+
+  //Get first suggestion from search suggest
+  const suggestion = searchSuggest.getSuggestions(query.toLowerCase(), 1);
+  if (!suggestion) {
+    res.status(401).json({ error: "No suggestion found" });
+  } else {
+    console.log("Suggestion: ", suggestion);
+
+    //Get the exact product from the products array
+    let exactProduct = productsArray.find(
+      (product) => product.name.toLowerCase() == suggestion
+    );
+    //Get three most similar products from the products array
+    //Filter out the exact product from the list of similar products
+    const similar = getSimilarity(productsArray, suggestion, 3).filter(
+      (p) => p.name.toLowerCase() !== exactProduct.name.toLowerCase()
+    );
+
+    //Join together the exact product and the similar products
+    const similarProducts = [exactProduct, ...similar];
+
+    res.json({
+      similarProducts,
+    });
+  }
 });
 
 // Catch-all route to serve index.html
