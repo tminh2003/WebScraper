@@ -1,0 +1,25 @@
+.container {
+  width: 800px;
+}
+
+.comparison-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.comparison-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background-color: gray;
+
+  width: 100%;
+  padding: 1rem;
+}
+
+.store-info {
+  display: flex;
+  flex-direction: row;
+}

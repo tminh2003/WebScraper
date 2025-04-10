@@ -3,6 +3,9 @@ import { useLocation } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
 
+import ComparisonList from "../components/ComparisonList";
+import "./css/ComparisonPage.css";
+
 const ComparisonPage = () => {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -28,7 +31,12 @@ const ComparisonPage = () => {
     }
   }, []);
 
-  return <div>{product.name}</div>;
+  return (
+    <div className="container">
+      <p>Price comparisons for {product.name}</p>
+      <ComparisonList product={product} />
+    </div>
+  );
 };
 
 export default ComparisonPage;
