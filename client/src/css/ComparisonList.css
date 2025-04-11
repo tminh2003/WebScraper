@@ -1,0 +1,45 @@
+.comparison-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.comparison-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background-color: lightskyblue;
+
+  width: 800px;
+  padding: 1rem;
+}
+
+.comparison-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  background-color: purple;
+  border-radius: 5px;
+}
+
+.store-info {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  color: purple;
+}
+
+.price-info {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.price {
+  color: purple;
+  font-weight: bold;
+}

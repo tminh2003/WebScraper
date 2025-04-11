@@ -1,0 +1,7 @@
+.price-comparison-h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: purple;
+  margin-bottom: 1rem;
+}

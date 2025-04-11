@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/ComparisonList.css"; // Assuming you will style it in a CSS file
+import "../css/ComparisonList.css"; // Assuming you will style it in a CSS file
 
 const ComparisonList = ({ product }) => {
   console.log(product);
@@ -10,14 +10,14 @@ const ComparisonList = ({ product }) => {
   const comparisons = [
     {
       storeName: "eBay",
-      price: product.ebay_price,
-      imageUrl: "/images/ebay-logo.png", // Replace with the actual path to the eBay logo
+      price: product.ebayPrice,
+      imageUrl: "d/images/ebay-logo.png", // Replace with the actual path to the eBay logo
       link: "https://www.ebay.com",
     },
     {
       storeName: "Amazon",
-      price: product.amazon_price,
-      imageUrl: "/images/amazon-logo.png", // Replace with the actual path to the Amazon logo
+      price: product.amazonPrice,
+      imageUrl: "d/images/amazon-logo.png", // Replace with the actual path to the Amazon logo
       link: "https://www.amazon.com",
     },
   ];
@@ -27,12 +27,8 @@ const ComparisonList = ({ product }) => {
       {comparisons.map((comparison, index) => (
         <div key={index} className="comparison-item">
           <div className="store-info">
-            <img
-              src={comparison.imageUrl}
-              alt={`${comparison.storeName} logo`}
-              className="store-logo"
-            />
-            <span className="store-name">{comparison.storeName}</span>
+            <strong className="store-name">{comparison.storeName}</strong>
+            <span className="store-name">{product.name}</span>
           </div>
           <div className="price-info">
             <span className="price">${comparison.price}</span>

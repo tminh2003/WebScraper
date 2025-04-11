@@ -4,6 +4,8 @@ import axios from "axios";
 
 import ResultItem from "../components/ResultItem"; // Adjust the import path as necessary
 
+import "../css/ResultPage.css"; // Assuming you have a CSS file for styling
+
 const ResultPage = () => {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -32,11 +34,11 @@ const ResultPage = () => {
 
   return (
     <div>
-      <h2>Search Results for "{query}"</h2>
+      <h1 className="result-page-h1">Search Results for "{query}"</h1>
       {results.length > 0 ? (
-        <ul>
-          {results.map((result, index) => (
-            <li key={index}>{<ResultItem result={result} />}</li>
+        <ul className="result-list">
+          {results.map((result) => (
+            <ResultItem product={result} />
           ))}
         </ul>
       ) : (

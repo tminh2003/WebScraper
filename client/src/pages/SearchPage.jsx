@@ -3,6 +3,8 @@ import axios from "axios";
 import SearchSuggestList from "../components/SearchSuggestList";
 import { useNavigate } from "react-router-dom";
 
+import "../css/SearchPage.css"; // Import your CSS file for styling
+
 const SERVER_URL = "http://localhost:3000";
 
 const SearchPage = () => {
@@ -49,16 +51,16 @@ const SearchPage = () => {
   }, [query]);
 
   return (
-    <div>
+    <div className="container">
       <form onSubmit={handleSearch}>
         <h1>Search for an item</h1>
         <input
+          className="search-bar"
           type="text"
           value={query}
           list="product-suggestions"
           onChange={(e) => setQuery(e.target.value)}
         />
-        <button type="submit">Search</button>
         <SearchSuggestList suggestions={suggestions} />
       </form>
     </div>

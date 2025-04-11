@@ -1,11 +1,25 @@
+import "../css/SearchSuggestList.css"; // Assuming you have a CSS file for
+
+import { useNavigate } from "react-router-dom";
+
 export default function SearchSuggestList({ suggestions }) {
-  console.log(Array.isArray(suggestions), suggestions);
+  const navigate = useNavigate();
+  if (!suggestions.length) return null;
 
   return (
-    <datalist id="product-suggestions">
+    <ul className="search-suggestions">
       {suggestions.map((suggestion, index) => (
-        <option key={index} value={suggestion} />
+        <li
+          key={index}
+          onClick={(e) => {
+            // Redirect to result page with query parameter
+            console.log("hi");
+            navigate(`/result?q=${e.target.innerText}`);
+          }}
+        >
+          {suggestion}
+        </li>
       ))}
-    </datalist>
+    </ul>
   );
 }

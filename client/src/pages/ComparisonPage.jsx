@@ -4,7 +4,7 @@ import axios from "axios";
 import { useState } from "react";
 
 import ComparisonList from "../components/ComparisonList";
-import "./css/ComparisonPage.css";
+import "../css/ComparisonPage.css";
 
 const ComparisonPage = () => {
   const location = useLocation();
@@ -32,10 +32,14 @@ const ComparisonPage = () => {
   }, []);
 
   return (
-    <div className="container">
-      <p>Price comparisons for {product.name}</p>
-      <ComparisonList product={product} />
-    </div>
+    <>
+      <h1 className="price-comparison-h1">
+        Price comparisons for "{product.name}"
+      </h1>
+      <div className="container">
+        <ComparisonList product={product} />
+      </div>
+    </>
   );
 };
 
