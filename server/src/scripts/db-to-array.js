@@ -25,6 +25,7 @@ function loadArrayFromDb() {
       }
 
       // Load all rows into the products array
+      const start = process.hrtime(); // Start time measurement
       products = rows.map((row) => ({
         id: row.Product_ID,
         name: row.Product_Name,
@@ -37,8 +38,9 @@ function loadArrayFromDb() {
         ebayURL: row.eBay_URL,
         timestamp: row.Timestamp,
       }));
-
-      console.log("Products loaded:", products);
+      const diff = process.hrtime(start);
+      const timeInMs = diff[0] * 1000 + diff[1] / 1e6;
+      console.log(`Time taken to insert to array: ${timeInMs.toFixed(3)} ms`);
 
       // Resolve the promise with the populated products array
       resolve(products);

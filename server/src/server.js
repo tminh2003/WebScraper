@@ -2,13 +2,14 @@ const Trie = require("./Trie.js");
 const loadCsvToDb = require("./scripts/csv-to-db.js");
 const loadTrieFromDb = require("./scripts/db-to-trie.js");
 const loadArrayFromDb = require("./scripts/db-to-array.js");
-const getSimilarity = require("./scripts/similarity.js");
+const findSimilarProducts = require("./scripts/similarity.js");
 const { PORT } = require("../config.js");
 
 const express = require("express");
 const path = require("path");
 const app = express();
 const cors = require("cors");
+const findProductsByType = require("./scripts/similarity.js");
 
 app.use(cors());
 
@@ -28,7 +29,6 @@ let productsArray;
 
     // Initialize productsArray after DB is ready
     productsArray = await loadArrayFromDb();
-    console.log(productsArray);
 
     // Start the server only after setup is complete
     app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
@@ -45,6 +45,9 @@ app.get("/suggestions", (req, res) => {
   }
 
   const query = req.query.query;
+
+  //Testing for data
+  searchSuggest.search(query.toLowerCase());
 
   // Get suggestions from Trie
   const suggestions = searchSuggest.getSuggestions(query.toLowerCase(), 5);
@@ -71,9 +74,7 @@ app.get("/search", (req, res) => {
     );
     //Get three most similar products from the products array
     //Filter out the exact product from the list of similar products
-    const similar = getSimilarity(productsArray, suggestion, 3).filter(
-      (p) => p.name.toLowerCase() !== exactProduct.name.toLowerCase()
-    );
+    const similar = findProductsByType(productsArray, exactProduct, 3);
 
     //Join together the exact product and the similar products
     const similarProducts = [exactProduct, ...similar];

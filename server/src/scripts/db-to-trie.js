@@ -28,13 +28,17 @@ function loadTrieFromDb() {
       }
 
       // Insert each product name into the Trie
+      const start = process.hrtime();
       rows.forEach((row) => {
         if (row.Product_Name) {
           trie.insert(row.Product_Name.toLowerCase()); // Insert product name in lowercase
         }
       });
-
-      console.log(" All product names inserted into the Trie.");
+      const diff = process.hrtime(start);
+      const timeInMs = diff[0] * 1000 + diff[1] / 1e6;
+      console.log(
+        `Time taken to insert all items into Trie: ${timeInMs.toFixed(3)} ms`
+      );
 
       // Close the database connection
       db.close((err) => {

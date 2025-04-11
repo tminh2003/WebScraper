@@ -26,6 +26,7 @@ class Trie {
 
   // Search for a word in the Trie
   search(word) {
+    const start = process.hrtime(); // Start time measurement
     let node = this.root;
     for (let char of word) {
       if (!node.children[char]) {
@@ -33,6 +34,9 @@ class Trie {
       }
       node = node.children[char];
     }
+    const diff = process.hrtime(start);
+    const timeInMs = diff[0] * 1000 + diff[1] / 1e6;
+    console.log(`Time taken to search word: ${timeInMs.toFixed(3)} ms`);
     return node.isEndOfWord;
   }
 

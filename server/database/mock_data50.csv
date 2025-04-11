@@ -1,0 +1,51 @@
+Product_ID,Product_Name,Product_Type,Product_Color,Product_Material,Amazon_Price,eBay_Price,Amazon_URL,eBay_URL,Timestamp
+1,Apple iPhone 15 Pro,Electronics,Silver,Titanium,1099.00,1075.50,https://amazon.com/product1,https://ebay.com/item1,2025-03-31 12:01:00
+2,Samsung Galaxy S24 Ultra,Electronics,Black,Aluminum,1199.99,1179.89,https://amazon.com/product2,https://ebay.com/item2,2025-03-31 12:01:01
+3,Dyson V15 Detect,Home Appliance,Purple,Plastic,699.00,680.20,https://amazon.com/product3,https://ebay.com/item3,2025-03-31 12:01:02
+4,Sony WH-1000XM5,Gaming,Black,Plastic,399.99,389.99,https://amazon.com/product4,https://ebay.com/item4,2025-03-31 12:01:03
+5,Google Nest Thermostat,Smart Home,White,Glass,129.99,124.99,https://amazon.com/product5,https://ebay.com/item5,2025-03-31 12:01:04
+6,KitchenAid Stand Mixer,Kitchen,Red,Metal,349.00,340.00,https://amazon.com/product6,https://ebay.com/item6,2025-03-31 12:01:05
+7,Levi's 501 Jeans,Clothing,Blue,Denim,59.99,55.00,https://amazon.com/product7,https://ebay.com/item7,2025-03-31 12:01:06
+8,Nike Air Max 90,Shoes,White,Leather,120.00,115.00,https://amazon.com/product8,https://ebay.com/item8,2025-03-31 12:01:07
+9,Canon EOS R6 Mark II,Camera,Black,Magnesium Alloy,2499.00,2450.00,https://amazon.com/product9,https://ebay.com/item9,2025-03-31 12:01:08
+10,Kindle Paperwhite,Books,Black,Plastic,139.99,135.00,https://amazon.com/product10,https://ebay.com/item10,2025-03-31 12:01:09
+11,Instant Pot Duo Nova,Kitchen,Silver,Stainless Steel,79.00,75.00,https://amazon.com/product11,https://ebay.com/item11,2025-03-31 12:01:10
+12,Adidas Ultraboost,Shoes,Black,Fabric,180.00,175.00,https://amazon.com/product12,https://ebay.com/item12,2025-03-31 12:01:11
+13,Bose QuietComfort Earbuds II,Audio,Black,Plastic,249.00,240.00,https://amazon.com/product13,https://ebay.com/item13,2025-03-31 12:01:12
+14,Roomba i7+,Home Appliance,Black,Plastic,499.00,480.00,https://amazon.com/product14,https://ebay.com/item14,2025-03-31 12:01:13
+15,Fitbit Versa 4,Fitness,Pink,Aluminum,229.00,220.00,https://amazon.com/product15,https://ebay.com/item15,2025-03-31 12:01:14
+16,Lego Millennium Falcon,Toys,Multi,Plastic,800.00,780.00,https://amazon.com/product16,https://ebay.com/item16,2025-03-31 12:01:15
+17,Yeti Rambler 20 oz,Outdoor,Silver,Stainless Steel,35.00,33.00,https://amazon.com/product17,https://ebay.com/item17,2025-03-31 12:01:16
+18,Nintendo Switch OLED,Gaming,White,Plastic,349.00,340.00,https://amazon.com/product18,https://ebay.com/item18,2025-03-31 12:01:17
+19,Apple Watch Series 9,Smart Watch,Midnight,Aluminum,399.00,390.00,https://amazon.com/product19,https://ebay.com/item19,2025-03-31 12:01:18
+20,Breville Barista Express,Kitchen,Silver,Stainless Steel,699.00,680.00,https://amazon.com/product20,https://ebay.com/item20,2025-03-31 12:01:19
+21,Ray-Ban Aviator,Accessories,Gold,Metal,163.00,158.00,https://amazon.com/product21,https://ebay.com/item21,2025-03-31 12:01:20
+22,Logitech MX Master 3S,Computer,Gray,Plastic,99.00,95.00,https://amazon.com/product22,https://ebay.com/item22,2025-03-31 12:01:21
+23,Herman Miller Aeron Chair,Furniture,Graphite,Mesh,1500.00,1450.00,https://amazon.com/product23,https://ebay.com/item23,2025-03-31 12:01:22
+24,GoPro HERO11 Black,Camera,Black,Plastic,399.00,390.00,https://amazon.com/product24,https://ebay.com/item24,2025-03-31 12:01:23
+25,Dior Sauvage,Fragrance,Blue,Glass,100.00,95.00,https://amazon.com/product25,https://ebay.com/item25,2025-03-31 12:01:24
+26,DeWalt Drill Combo Kit,Tools,Yellow,Plastic/Metal,299.00,290.00,https://amazon.com/product26,https://ebay.com/item26,2025-03-31 12:01:25
+27,All-Clad D3 Cookware Set,Kitchen,Silver,Stainless Steel,599.00,580.00,https://amazon.com/product27,https://ebay.com/item27,2025-03-31 12:01:26
+28,Patagonia Nano Puff Jacket,Clothing,Black,Nylon,229.00,220.00,https://amazon.com/product28,https://ebay.com/item28,2025-03-31 12:01:27
+29,On Cloudswift,Shoes,Gray,Fabric,149.00,145.00,https://amazon.com/product29,https://ebay.com/item29,2025-03-31 12:01:28
+30,DJI Mavic 3 Pro,Drone,Gray,Aluminum,2199.00,2150.00,https://amazon.com/product30,https://ebay.com/item30,2025-03-31 12:01:29
+31,Bowers & Wilkins Speakers,Audio,Black,Wood/Metal,799.00,780.00,https://amazon.com/product31,https://ebay.com/item31,2025-03-31 12:01:30
+32,Shark Navigator Vacuum,Home Appliance,Blue,Plastic,199.00,190.00,https://amazon.com/product32,https://ebay.com/item32,2025-03-31 12:01:31
+33,Garmin Forerunner 955,Fitness,Black,Plastic,499.00,490.00,https://amazon.com/product33,https://ebay.com/item33,2025-03-31 12:01:32
+34,Hot Wheels Ultimate Garage,Toys,Multi,Plastic,120.00,115.00,https://amazon.com/product34,https://ebay.com/item34,2025-03-31 12:01:33
+35,Hydro Flask Water Bottle,Outdoor,Green,Stainless Steel,45.00,43.00,https://amazon.com/product35,https://ebay.com/item35,2025-03-31 12:01:34
+36,Xbox Series X,Gaming,Black,Plastic,499.00,490.00,https://amazon.com/product36,https://ebay.com/item36,2025-03-31 12:01:35
+37,Samsung Galaxy Watch 6,Smart Watch,Silver,Aluminum,329.00,320.00,https://amazon.com/product37,https://ebay.com/item37,2025-03-31 12:01:36
+38,Cuisinart Food Processor,Kitchen,White,Plastic,149.00,145.00,https://amazon.com/product38,https://ebay.com/item38,2025-03-31 12:01:37
+39,Oakley Holbrook Sunglasses,Accessories,Black,Plastic,150.00,145.00,https://amazon.com/product39,https://ebay.com/item39,2025-03-31 12:01:38
+40,Corsair K70 Keyboard,Computer,Black,Aluminum,159.00,155.00,https://amazon.com/product40,https://ebay.com/item40,2025-03-31 12:01:39
+41,Steelcase Gesture Chair,Furniture,Black,Mesh,1200.00,1180.00,https://amazon.com/product41,https://ebay.com/item41,2025-03-31 12:01:40
+42,Sony Alpha 7 IV,Camera,Black,Magnesium Alloy,2499.00,2450.00,https://amazon.com/product42,https://ebay.com/item42,2025-03-31 12:01:41
+43,Creed Aventus,Fragrance,Black,Glass,335.00,325.00,https://amazon.com/product43,https://ebay.com/item43,2025-03-31 12:01:42
+44,Milwaukee Impact Driver,Tools,Red,Plastic/Metal,199.00,190.00,https://amazon.com/product44,https://ebay.com/item44,2025-03-31 12:01:43
+45,Le Creuset Dutch Oven,Kitchen,Red,Cast Iron,399.00,390.00,https://amazon.com/product45,https://ebay.com/item45,2025-03-31 12:01:44
+46,Canada Goose Expedition Parka,Clothing,Black,Nylon,1495.00,1475.00,https://amazon.com/product46,https://ebay.com/item46,2025-03-31 12:01:45
+47,ASICS Gel-Nimbus,Shoes,Blue,Fabric,160.00,155.00,https://amazon.com/product47,https://ebay.com/item47,2025-03-31 12:01:46
+48,Autel Robotics EVO II Pro,Drone,Orange,Aluminum,1999.00,1950.00,https://amazon.com/product48,https://ebay.com/item48,2025-03-31 12:01:47
+49,Sonos Arc Soundbar,Audio,Black,Plastic/Metal,899.00,880.00,https://amazon.com/product49,https://ebay.com/item49,2025-03-31 12:01:48
+50,Roborock S7 MaxV Ultra,Home Appliance,White,Plastic,1399.00,1380.00,https://amazon.com/product50,https://ebay.com/item50,2025-03-31 12:01:49

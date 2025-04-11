@@ -1,0 +1,6 @@
+Product_ID,Product_Name,Product_Type,Product_Color,Product_Material,Amazon_Price,eBay_Price,Amazon_URL,eBay_URL,Timestamp
+1,Apple iPhone 15 Pro,Electronics,Silver,Titanium,1099.00,1075.50,https://amazon.com/product1,https://ebay.com/item1,2025-03-31 12:01:00
+2,Samsung Galaxy S24 Ultra,Electronics,Black,Aluminum,1199.99,1179.89,https://amazon.com/product2,https://ebay.com/item2,2025-03-31 12:01:01
+3,Dyson V15 Detect,Home Appliance,Purple,Plastic,699.00,680.20,https://amazon.com/product3,https://ebay.com/item3,2025-03-31 12:01:02
+4,Sony WH-1000XM5,Gaming,Black,Plastic,399.99,389.99,https://amazon.com/product4,https://ebay.com/item4,2025-03-31 12:01:03
+5,Google Nest Thermostat,Smart Home,White,Glass,129.99,124.99,https://amazon.com/product5,https://ebay.com/item5,2025-03-31 12:01:04

@@ -12,18 +12,19 @@ const ResultItem = ({ product }) => {
   const handleClick = () => {
     navigate(`/compare?productId=${product.name}`);
   };
+
+  const smallerPrice =
+    product.amazonPrice < product.ebayPrice
+      ? product.amazonPrice
+      : product.ebayPrice;
+
   return (
     <div onClick={handleClick} className="result-item">
       <h2 className>{product.name}</h2>
-      <p className="">Type: {product.type}</p>
-      <p className="">Color: {product.color}</p>
-      <p className="">Material: {product.material}</p>
-      <p className="">
-        $
-        {product.amazonPrice > product.ebayPrice
-          ? product.amazonPrice
-          : product.ebayPrice}
-      </p>
+      <p>Type: {product.type}</p>
+      <p>Color: {product.color}</p>
+      <p>Material: {product.material}</p>
+      <p>${smallerPrice}</p>
     </div>
   );
 };
